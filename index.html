@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="active" href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- Columna Izquierda -->
+        <div class="left-column">
+            <section id="profile">
+                <section id="card" class="profile-card">
+                    <div class="profile-image">
+                        <img src="assets/img/sushi.jpg" alt="Avatar">
+                    </div>
+                    <div class="container">
+                        <h4><b>Nicolas Huenchullan</b></h4> 
+                        <p class="title">Tecnico en informatica</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="skills">
+                <h1>Mis Habilidades TI</h1>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-php"></i>
+                        <h3>PHP</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-description">
+                    <p>Como estudiante de segundo año en desarrollo web, he adquirido sólidos conocimientos 
+                        en HTML5 y CSS3. Estas tecnologías me permiten crear sitios web atractivos y funcionales, 
+                        con un enfoque en la accesibilidad y la experiencia del usuario.</p>
+
+                    <aside>
+                        <p>Además de mis habilidades en el front-end, también manejo PHP para el desarrollo del lado 
+                            del servidor. Esto me permite gestionar bases de datos y crear aplicaciones web dinámicas.</p>
+                    </aside>
+
+                    <p>Mi conocimiento en Python complementa mis habilidades en desarrollo web, permitiéndome 
+                        automatizar tareas y desarrollar scripts eficientes.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Columna Derecha -->
+        <div class="right-column">
+            <section id="products">
+                <h1>Productos</h1>
+                <div class="products-grid">
+                    <section id="card" class="product-card">
+                        <div class="product-image">
+                            <img src="img/img_avatar.png" alt="Producto 1">
+                            <div class="product-overlay">
+                                <a href="#" class="view-project">Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h4><b>Producto 1</b></h4> 
+                            <p>Descripción del producto 1</p>
+                            <div class="product-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="card" class="product-card">
+                        <div class="product-image">
+                            <img src="img/img_avatar.png" alt="Producto 2">
+                            <div class="product-overlay">
+                                <a href="#" class="view-project">Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h4><b>Producto 2</b></h4> 
+                            <p>Descripción del producto 2</p>
+                            <div class="product-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>¿Tienes un proyecto en mente? ¡Contáctame!</p>
+                <form action="/action_page.php">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Apellido</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Tu apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">País</label>
+                        <select id="country" name="country">
+                            <option value="chile">Chile</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="peru">Perú</option>
+                            <option value="colombia">Colombia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Mensaje</label>
+                        <textarea id="subject" name="subject" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
