@@ -1,0 +1,211 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #2c3e50;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #34495e;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Projects section */
+#projects {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem 2rem 2rem;
+  flex-wrap: wrap;
+}
+
+#card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  overflow: hidden;
+}
+
+#card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+#card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+.container h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.container p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Skills section */
+#aside {
+  background-color: white;
+  padding: 3rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 1200px;
+}
+
+#aside h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#aside p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+#aside aside {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-left: 4px solid #3498db;
+  margin: 1.5rem 0;
+}
+
+/* Contact section */
+#contact {
+  background-color: white;
+  padding: 3rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 1200px;
+}
+
+#contact h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+#contact p {
+  text-align: left;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.column {
+  padding: 1rem;
+}
+
+.column img {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Form styles */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  nav {
+      padding: 0.5rem;
+  }
+  
+  nav a {
+      padding: 0.5rem 1rem;
+      margin: 0 0.2rem;
+      font-size: 0.9rem;
+  }
+  
+  #projects {
+      padding-top: 5rem;
+  }
+  
+  #card {
+      width: 100%;
+      max-width: 300px;
+  }
+  
+  #aside, #contact {
+      padding: 2rem;
+      margin: 1rem;
+  }
+  
+  .column {
+      width: 100%;
+  }
+}
